@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Commands — Jugaad</title>
+  <title>Commands: Jugaad</title>
   <meta name="description" content="Full command reference for Jugaad, a Discord bot for economy, gambling, and community." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,9 +29,9 @@
     <p class="build-note">This list reflects what's live in the current build plus commands planned for later phases. Planned commands are tagged <span class="badge badge-soon">Coming soon</span> so you can tell them apart.</p>
 
     <div class="legend">
-      <div class="legend-item"><code class="mono">&lt;required&gt;</code> — argument must be provided</div>
-      <div class="legend-item"><code class="mono">[optional]</code> — argument may be omitted</div>
-      <div class="legend-item"><span class="badge badge-soon">Coming soon</span> — planned, not yet implemented</div>
+      <div class="legend-item"><code class="mono">&lt;required&gt;</code>: argument must be provided</div>
+      <div class="legend-item"><code class="mono">[optional]</code>: argument may be omitted</div>
+      <div class="legend-item"><span class="badge badge-soon">Coming soon</span>: planned, not yet implemented</div>
     </div>
 
     <div class="filter-bar">
@@ -111,7 +111,7 @@
         <div class="command-list">
           <article class="command-card" data-name="coinflip">
             <header><code>/coinflip &lt;amount&gt; &lt;side&gt;</code></header>
-            <p class="desc">Flip a coin — call it right to double your bet.</p>
+            <p class="desc">Flip a coin: call it right to double your bet.</p>
             <p class="note">Side choices: heads or tails.</p>
           </article>
           <article class="command-card" data-name="slots">
@@ -126,12 +126,12 @@
           </article>
           <article class="command-card" data-name="dice">
             <header><code>/dice &lt;amount&gt; &lt;mode&gt; &lt;number&gt;</code></header>
-            <p class="desc">Roll a hidden d20 — guess higher/lower or the exact number.</p>
+            <p class="desc">Roll a hidden d20: guess higher/lower or the exact number.</p>
             <p class="note">Mode choices: higher, lower, or exact. Number is 1–20. Higher/lower pays even money, an exact guess pays a bigger multiplier.</p>
           </article>
           <article class="command-card" data-name="roulette">
             <header><code>/roulette &lt;amount&gt; &lt;bet_type&gt; [value]</code></header>
-            <p class="desc">Spin the wheel — red/black, odd/even, a number, or a dozen.</p>
+            <p class="desc">Spin the wheel: red/black, odd/even, a number, or a dozen.</p>
             <p class="note">Bet-type choices: red, black, odd, even (all 1:1), number (35:1), dozen (2:1). Provide <code>value</code> as a number 0–36 for a straight-up bet, or 1/2/3 for a dozen.</p>
           </article>
           <article class="command-card" data-name="crash">
@@ -173,7 +173,7 @@
         <div class="command-list">
           <article class="command-card" data-name="td">
             <header><code>/td [mode]</code></header>
-            <p class="desc">Truth or Dare — random pick, or force a mode.</p>
+            <p class="desc">Truth or Dare: random pick, or force a mode.</p>
             <p class="note">Mode choices: truth or dare. Reroll button, capped at 3 rerolls per message.</p>
           </article>
           <article class="command-card" data-name="activechat">
@@ -208,7 +208,7 @@
           <article class="command-card" data-name="ship">
             <header><code>/ship &lt;user1&gt; &lt;user2&gt;</code></header>
             <p class="desc">Ship two people and get a compatibility score.</p>
-            <p class="note">Deterministic — the same pair always gets the same number.</p>
+            <p class="note">Deterministic: the same pair always gets the same number.</p>
           </article>
           <article class="command-card" data-name="rate">
             <header><code>/rate &lt;thing&gt;</code></header>
@@ -217,7 +217,7 @@
           </article>
           <article class="command-card" data-name="wyr">
             <header><code>/wyr</code></header>
-            <p class="desc">Would You Rather — vote with reactions, results in 30 seconds.</p>
+            <p class="desc">Would You Rather: vote with reactions, results in 30 seconds.</p>
             <p class="note">Auto-tallies votes and reveals the split.</p>
           </article>
         </div>
@@ -270,7 +270,7 @@
           </article>
           <article class="command-card" data-name="ship-card">
             <header><code>/ship-card &lt;user1&gt; &lt;user2&gt; <span class="badge badge-soon">Coming soon</span></code></header>
-            <p class="desc">Visual version of <code>/ship</code> — two avatars, a heart, and the compatibility percentage.</p>
+            <p class="desc">Visual version of <code>/ship</code>: two avatars, a heart, and the compatibility percentage.</p>
           </article>
         </div>
       </section>
@@ -278,7 +278,7 @@
       <!-- Moderation -->
       <section class="command-category" id="moderation">
         <h2>Moderation</h2>
-        <p class="category-note">Moderation commands are gated by real Discord permissions — Discord hides each one from anyone who lacks the matching permission, so most members never see this category at all. Every action here (except <code>/slowmode</code>, <code>/lock</code>, and <code>/unlock</code>, which reply publicly since they change visible channel state) replies privately to the moderator, and is also posted to the server's mod-log channel if one is configured with <code>/modlog set</code>.</p>
+        <p class="category-note">Moderation commands are gated by real Discord permissions: Discord hides each one from anyone who lacks the matching permission, so most members never see this category at all. Every action here (except <code>/slowmode</code>, <code>/lock</code>, and <code>/unlock</code>, which reply publicly since they change visible channel state) replies privately to the moderator, and is also posted to the server's mod-log channel if one is configured with <code>/modlog set</code>.</p>
         <div class="command-list">
           <article class="command-card" data-name="warn">
             <header><code>/warn &lt;user&gt; &lt;reason&gt;</code></header>
@@ -313,7 +313,7 @@
           <article class="command-card" data-name="purge">
             <header><code>/purge &lt;amount&gt;</code></header>
             <p class="desc">Bulk-delete recent messages in the current channel.</p>
-            <p class="note">Requires Manage Messages. Capped at 100 per run — Discord's bulk-delete limit. Messages older than 14 days are silently skipped and reported as such.</p>
+            <p class="note">Requires Manage Messages. Capped at 100 per run: Discord's bulk-delete limit. Messages older than 14 days are silently skipped and reported as such.</p>
           </article>
           <article class="command-card" data-name="slowmode">
             <header><code>/slowmode &lt;seconds&gt;</code></header>
@@ -322,7 +322,7 @@
           </article>
           <article class="command-card" data-name="lock">
             <header><code>/lock [reason]</code></header>
-            <p class="desc">Lock the current channel — stops @everyone from sending messages.</p>
+            <p class="desc">Lock the current channel: stops @everyone from sending messages.</p>
             <p class="note">Requires Manage Channels.</p>
           </article>
           <article class="command-card" data-name="unlock">
@@ -332,12 +332,12 @@
           </article>
           <article class="command-card" data-name="lockdown">
             <header><code>/lockdown [reason]</code></header>
-            <p class="desc">Raid response — lock every text/announcement/forum channel in the server.</p>
+            <p class="desc">Raid response: lock every text/announcement/forum channel in the server.</p>
             <p class="note">Requires Manage Channels. Shows a Confirm/Cancel prompt (30s, scoped to you) before touching anything.</p>
           </article>
           <article class="command-card" data-name="unlockdown">
             <header><code>/unlockdown [reason]</code></header>
-            <p class="desc">Lift a server-wide lockdown — unlock every text/announcement/forum channel.</p>
+            <p class="desc">Lift a server-wide lockdown: unlock every text/announcement/forum channel.</p>
             <p class="note">Requires Manage Channels. Same Confirm/Cancel prompt as <code>/lockdown</code>.</p>
           </article>
           <article class="command-card" data-name="nickname reset">
